@@ -34,3 +34,7 @@
 
 # .idea file
 .idea/
+
+# .grade file
+.gradle/
+employee_skills.iml
