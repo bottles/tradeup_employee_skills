@@ -1,15 +1,27 @@
 package employee_skills
 
+import grails.persistence.Entity
+
+@Entity
 class Employee {
 
-    int id
     String name
 
     static hasMany = [skills:Skill]
 
 
     static constraints = {
-        name blank:false
+        name blank: false, unique: true
     }
 
+    static mapping = {
+        skills cascade: "all"
+    }
+
+
+    @Override
+    String toString() {
+        return '{"id": ' + String.valueOf(id) + ', "name": "' + \
+                name + '", "skills": ' + skills.toString() + ' }'
+    }
 }
