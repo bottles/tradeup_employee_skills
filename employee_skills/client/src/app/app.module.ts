@@ -9,12 +9,14 @@ import { NavComponent } from './nav/nav.component';
 import { NavService } from './nav/nav.service';
 import { AppRoutingModule } from "./app-routing.module";
 import { HttpClientModule } from "@angular/common/http";
+import { EmployeeSkillComponent } from './employee-skill/employee-skill.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    IndexComponent
+    IndexComponent,
+    EmployeeSkillComponent
   ],
   imports: [
     BrowserModule,

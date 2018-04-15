@@ -16,6 +16,7 @@ class Skill {
         employees cascade: "all"
     }
 
+
     @Override
     String toString() {
         return '{"id": ' + String.valueOf(id) + ', "name": "' + name + '" }'
