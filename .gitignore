@@ -38,3 +38,6 @@
 # .grade file
 .gradle/
 employee_skills.iml
+
+# ignore yarn.lock
+yarn.lock
