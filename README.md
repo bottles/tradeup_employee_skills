@@ -7,4 +7,4 @@ How to run:
 * ./gradlew client:bootRun
 * start mysql server instance
 
-Note that if you wish to run in IntelliJ, simple just pull all the code, and open project. 
+Note that if you wish to run in IntelliJ, simply just pull all the code, and open project. 
