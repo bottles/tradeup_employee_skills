@@ -14,7 +14,8 @@ class EmployeeController {
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
-        respond employeeService.list(params), model:[employeeCount: employeeService.count()]
+        def jsonSlurper = new JsonSlurper()
+        respond jsonSlurper.parseText(employeeService.list(params).toString()), model:[employeeCount: employeeService.count()]
     }
 
     def show(Long id) {

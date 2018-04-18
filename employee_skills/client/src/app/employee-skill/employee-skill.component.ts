@@ -25,8 +25,8 @@ export class EmployeeSkillComponent implements OnInit {
       //console.warn(this.employees.toLocaleString());
   }
 
-    onSelect(e: Employee): void {
-        this.selectedEmployee = e;
-    }
+  onSelect(e): void {
+      this.selectedEmployee = e;
+  }
 
 }
