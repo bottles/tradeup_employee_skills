@@ -10,7 +10,7 @@ pipeline {
       steps {
         sh '''git checkout test_connection;
 ls;
-cd server;
+cd employee_skills/server;
 grails test-app employee_skills.EmployeeSpec -echoOut -unit;'''
       }
     }
