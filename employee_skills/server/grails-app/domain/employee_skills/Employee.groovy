@@ -11,7 +11,7 @@ class Employee {
 
 
     static constraints = {
-        name blank: false, unique: true
+        name size: 6..10, blank: false, unique: true, nullable: false
     }
 
     static mapping = {
